@@ -1,0 +1,5 @@
+)el('jumpPage').onclick=()=>{let p=Number(el('pageNumber').value);let target=box.querySelectorAll('.page-group')[p-1];if(target)target.scrollIntoView({behavior:'smooth',block:'start'})};
+}
+el('homeLink').onclick=e=>{e.preventDefault();show('home')};el('homeNav').onclick=()=>show('home');el('startHpi').onclick=()=>show('hpi');el('startSummary').onclick=()=>show('summary');el('hpiHome').onclick=()=>show('home');
+el('topicSearch').oninput=e=>{query=e.target.value.trim().toLowerCase();renderTopics()};show('home');
+</script></body></html>
